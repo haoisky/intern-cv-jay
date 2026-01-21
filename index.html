@@ -48,16 +48,45 @@
             </article>
         </section>
 
+        <button id="theme-toggle">🌙 Dark Mode</button>
+
         <section id="skills">
             <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML5 & Semantic Markup</li>
-                <li>CSS3 & Flexbox/Grid</li>
+            <button id="toggle-skills">Hide Skills</button> <ul id="skills-list"> <li>HTML5 & Semantic Markup</li>
+                <li>CSS3 & Box Model</li>
                 <li>JavaScript (ES6+)</li>
-                <li>React.js</li>
                 <li>Git & Version Control</li>
             </ul>
         </section>
+
+        <section id="engagement">
+        <h3>Engagement</h3>
+        <p>Did you like my CV?</p>
+        <p>Total Likes: <span id="count-display">0</span></p>
+        <button id="like-btn">👍 Like this CV</button>
+    </section>
+
+    <section id="contact-section">
+        <h3>Contact Me</h3>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <small id="name-error" class="error-msg"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <small id="email-error" class="error-msg"></small>
+            </div>
+
+            <button type="submit" id="submit-btn">Send Message</button>
+            <p id="form-feedback"></p>
+        </form>
+    </section>
+
+        <script src="script.js"></script>
 
     </main>
 
